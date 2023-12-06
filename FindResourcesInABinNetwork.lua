@@ -12,3 +12,4 @@ else
 Disk:Write(bin:getResource(), Disk:Read(bin:GetResource()) + bin:GetAmount()
 end
 end 
+end
