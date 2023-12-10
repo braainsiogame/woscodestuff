@@ -20,23 +20,23 @@ print("Resource in bin: " .. bin:GetResource())
 	end
 end 
 local ResourceSign = Screen:CreateElement("TextLabel", {
-	Text = "Resource",
-	TextSize = 17,
+	Text = "Resources",
+	TextSize = 23,
 	Font = "SciFi",
-	BackgroundColor3 = Color3.fromHex("#1E0C3E"),
+	BackgroundColor3 = Color3.fromHex("#15082b"),
 	BorderColor3 = Color3.fromHex("#FFFFFF"),
-	TextColor3 = Color3.fromHex("#FFFFFF"),
+	TextColor3 = Color3.fromHex("#ff4d4d"),
 	BorderSizePixel = 2, 
 	Position = UDim2.fromOffset(0, 0),
 	Size = UDim2.fromOffset(Screen:GetDimensions().x/2, 50),
 })
 local ResourceAmountSign = Screen:CreateElement("TextLabel", {
 	Text = "Amount",
-	TextSize = 17,
+	TextSize = 23,
 	Font = "SciFi",
-	BackgroundColor3 = Color3.fromHex("#1E0C3E"),
+	BackgroundColor3 = Color3.fromHex("#15082b"),
 	BorderColor3 = Color3.fromHex("#FFFFFF"),
-	TextColor3 = Color3.fromHex("#FFFFFF"),
+	TextColor3 = Color3.fromHex("#ff4d4d"),
 	BorderSizePixel = 2, 
 	Position = UDim2.fromOffset(Screen:GetDimensions().x/2, 0),
 	Size = UDim2.fromOffset(Screen:GetDimensions().x/2, 50),
@@ -48,6 +48,7 @@ ScrollingFrame = Screen:CreateElement("ScrollingFrame", {
 	BorderSizePixel = 2,
 	Position = UDim2.fromOffset(0, 50),
 	Size = UDim2.fromOffset(Screen:GetDimensions().x, Screen:GetDimensions().y),
+	AutomaticCanvasSize = XY,
 	})
 i = 0 
 for resource, amount in Resource do 
